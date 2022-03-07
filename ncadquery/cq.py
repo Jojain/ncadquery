@@ -1371,7 +1371,7 @@ class Workplane(object):
         # copy the current state to the new object
         ns = self.__class__()
         ns.plane = copy(self.plane)
-        ns.parent = self
+        ns.parent_obj = self
         ns.objects = list(objlist)
         ns.ctx = self.ctx
         return ns
