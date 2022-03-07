@@ -669,7 +669,7 @@ class Workplane(object):
         # make the new workplane
         plane = Plane(offsetCenter, xDir, normal)
         s = self.__class__(plane)
-        s.parent = self
+        s.parent_obj = self
         s.ctx = self.ctx
 
         # a new workplane has the center of the workplane on the stack
